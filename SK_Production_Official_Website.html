@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="SK Production & Photo Studio — professional wedding photography, videography and event production in Islamabad.">
+<title>SK Production & Photo Studio | Islamabad</title>
+<style>
+:root{--gold:#d8b365;--bg:#090909;--panel:#151515;--muted:#c1bdb4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:#f8f5ef;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,8,8,.97);border-bottom:1px solid #302719}
+nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:800;letter-spacing:1.4px}
+.logo b{color:var(--gold);font-size:22px}
+.navlinks{display:flex;gap:23px;font-size:13px;color:#eee}
+.navlinks a:hover{color:var(--gold)}
+.hero{min-height:650px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(0,0,0,.9),rgba(0,0,0,.3)),url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=90') center/cover}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:4px;text-transform:uppercase;font-weight:bold}
+.hero h1{font-size:clamp(44px,7vw,82px);line-height:1.02;margin:18px 0;max-width:800px}
+.hero h1 span,.gold{color:var(--gold)}
+.hero p{font-size:18px;color:#e4e0d8;max-width:600px}
+.btn{display:inline-block;padding:13px 22px;margin:12px 10px 0 0;border:1px solid var(--gold);color:var(--gold);font-size:12px;font-weight:bold;letter-spacing:1.2px;transition:.2s;cursor:pointer;background:transparent}
+.btn:hover{background:var(--gold);color:#111}
+.btn.primary{background:var(--gold);color:#111}
+section{padding:86px 0}
+.heading{text-align:center;margin:0 auto 42px}
+.heading small{color:var(--gold);letter-spacing:3px;text-transform:uppercase}
+.heading h2{font-size:clamp(30px,4vw,46px);margin:8px 0}
+.heading p{color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.aboutimg{min-height:440px;background:url('https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1100&q=90') center/cover}
+.about h2{font-size:42px;line-height:1.15;margin:12px 0}
+.about p{color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{background:var(--panel);border:1px solid #302719;padding:30px}
+.service .n{color:var(--gold);letter-spacing:2px;font-size:12px}
+.service h3{margin:12px 0 8px}
+.service p{margin:0;color:var(--muted);font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.photo{height:300px;position:relative;background-size:cover;background-position:center;overflow:hidden}
+.photo:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.8))}
+.photo span{position:absolute;z-index:1;left:18px;bottom:16px;font-size:13px;letter-spacing:2px;font-weight:bold}
+.contact{background:linear-gradient(130deg,#1b1710,#0b0b0b);text-align:center;border-top:1px solid #3b2f1c;border-bottom:1px solid #3b2f1c}
+.contact h2{font-size:clamp(32px,5vw,48px);margin:8px}
+.contact p{color:var(--muted)}
+.contact-details{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px}
+.contact-details a{border:1px solid #554426;padding:12px 16px;color:#f7e5bd}
+.contact-details a:hover{background:#211b10}
+.booking{max-width:680px;margin:38px auto 0;padding:26px;background:#111;border:1px solid #554426;text-align:left}
+.booking h3{text-align:center;margin-top:0}
+.booking label{display:block;color:#e8d6b2;font-size:13px;margin:13px 0 5px}
+.booking input,.booking select,.booking textarea{width:100%;padding:12px;background:#090909;color:#fff;border:1px solid #554426;border-radius:2px;font:inherit}
+.booking textarea{min-height:100px;resize:vertical}
+.booking button{width:100%;margin-top:18px}
+footer{text-align:center;padding:25px;color:#999;font-size:13px}
+@media(max-width:760px){
+ nav{padding:13px 0;align-items:flex-start;flex-direction:column}
+ .navlinks{gap:13px;flex-wrap:wrap;font-size:12px}
+ .hero{min-height:540px}
+ .about{grid-template-columns:1fr}
+ .aboutimg{min-height:300px}
+ .services{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr 1fr}
+ .photo{height:230px}
+}
+@media(max-width:480px){
+ .gallery{grid-template-columns:1fr}
+ .photo{height:270px}
+ .hero h1{font-size:46px}
+ .booking{padding:18px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <div class="logo"><b>SK</b> PRODUCTION & PHOTO STUDIO</div>
+  <div class="navlinks">
+    <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#portfolio">PORTFOLIO</a><a href="#contact">CONTACT</a>
+  </div>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+  <div class="eyebrow">Photography • Videography • Production</div>
+  <h1>Turning Moments<br>Into <span>Memories.</span></h1>
+  <p>Professional photography and cinematic videography for weddings, events, portraits and life's special celebrations.</p>
+  <a class="btn" href="#portfolio">VIEW OUR WORK</a>
+  <a class="btn primary" href="#booking">BOOK YOUR EVENT</a>
+  <a class="btn" href="tel:+923145637021">CALL NOW</a>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <div class="aboutimg" role="img" aria-label="Wedding couple photography"></div>
+  <div><div class="eyebrow">Who we are</div><h2>We Capture Your <span class="gold">Best Moments</span></h2>
+    <p>SK Production & Photo Studio is here to turn your special occasions into lasting memories. We capture real emotions, beautiful details and the moments that matter most.</p>
+    <p>From wedding photography to cinematic event films, our focus is on creative visuals, professional service and memories you will love to revisit.</p>
+    <a class="btn" href="#contact">GET IN TOUCH</a>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <div class="heading"><small>What we offer</small><h2>Our Services</h2><p>Creative coverage for every special occasion.</p></div>
+  <div class="services">
+    <div class="service"><div class="n">01 / PHOTOGRAPHY</div><h3>Wedding & Event Photography</h3><p>Wedding moments, family portraits, celebrations and event highlights captured with care.</p></div>
+    <div class="service"><div class="n">02 / VIDEOGRAPHY</div><h3>Cinematic Films</h3><p>Beautiful cinematic video coverage that tells the story of your special day.</p></div>
+    <div class="service"><div class="n">03 / PRODUCTION</div><h3>Creative Production</h3><p>Creative photo and video content for personal events, brands and special projects.</p></div>
+  </div>
+</div></section>
+
+<section id="portfolio"><div class="wrap">
+  <div class="heading"><small>Selected moments</small><h2>Our Portfolio</h2><p>A selection of photography styles and event moments.</p></div>
+  <!-- Replace these sample image URLs with your original portfolio photo URLs when ready. -->
+  <div class="gallery">
+    <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85')"><span>WEDDING MOMENTS</span></div>
+    <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=85')"><span>COUPLE PORTRAITS</span></div>
+    <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85')"><span>CELEBRATIONS</span></div>
+    <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=900&q=85')"><span>PHOTOGRAPHY</span></div>
+    <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1507504031003-b417219a0e7b?auto=format&fit=crop&w=900&q=85')"><span>EVENT STORIES</span></div>
+    <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=85')"><span>EVENT FILMS</span></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div class="eyebrow">Let's make memories</div><h2>Book Your Event</h2>
+  <p>Contact SK Production & Photo Studio for bookings and enquiries.</p>
+  <div class="contact-details">
+    <a href="https://wa.me/923145637021" target="_blank" rel="noopener">WhatsApp: 0314 5637021</a>
+    <a href="tel:+923145637021">Call: 0314 5637021</a>
+    <a href="mailto:saqibkamboh7979@gmail.com">Email: saqibkamboh7979@gmail.com</a>
+  </div>
+  <p>Location: Athal Chowk, Islamabad</p>
+
+  <div class="booking" id="booking">
+    <h3>Booking Enquiry</h3>
+    <form id="bookingForm">
+      <label for="customerName">Your name</label>
+      <input id="customerName" name="customerName" autocomplete="name" required placeholder="Enter your name">
+      <label for="eventType">Event type</label>
+      <select id="eventType" name="eventType" required>
+        <option value="">Select event type</option>
+        <option>Wedding</option><option>Engagement</option><option>Birthday</option><option>Other event</option>
+      </select>
+      <label for="eventDate">Event date</label>
+      <input id="eventDate" name="eventDate" type="date" required>
+      <label for="eventLocation">Event location</label>
+      <input id="eventLocation" name="eventLocation" placeholder="Enter event location" required>
+      <label for="message">Additional details</label>
+      <textarea id="message" name="message" placeholder="Tell us what services you need (optional)"></textarea>
+      <button class="btn primary" type="submit">SEND BOOKING ON WHATSAPP</button>
+    </form>
+  </div>
+</div></section>
+</main>
+<footer>© 2026 SK Production & Photo Studio. All rights reserved.</footer>
+
+<script>
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const name = document.getElementById('customerName').value.trim();
+  const type = document.getElementById('eventType').value;
+  const date = document.getElementById('eventDate').value;
+  const location = document.getElementById('eventLocation').value.trim();
+  const message = document.getElementById('message').value.trim();
+  const text = `Hello SK Production & Photo Studio, I would like to enquire about a booking.%0AName: ${encodeURIComponent(name)}%0AEvent: ${encodeURIComponent(type)}%0ADate: ${encodeURIComponent(date)}%0ALocation: ${encodeURIComponent(location)}%0ADetails: ${encodeURIComponent(message)}`;
+  window.open('https://wa.me/923145637021?text=' + text, '_blank');
+});
+</script>
+</body>
+</html>
